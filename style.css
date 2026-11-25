@@ -1,26 +1,25 @@
 body {
-    background-color: #ff0000;
+    background-image: url("images/shiny_cat.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #2b2b2b;
+
     margin: 0;
     min-height: 100vh;
     padding: 40px;
     box-sizing: border-box;
+
     font-family: Arial, sans-serif;
     color: #ffffff;
-    position: relative;
-    z-index: 1;
 }
 
 body::before {
     content: "";
     position: fixed;
     inset: 0;
-    background-image: url("images/shiny_cat.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-    opacity: 0.3; 
-    
+    background: rgba(0, 0, 0, 0.45);
     z-index: -1;
 }
 
@@ -32,13 +31,13 @@ a,
 a:link,
 a:visited,
 a:active {
-    color: #ffd700;
+    color: #ffd700;            /* Жёлтый */
     text-decoration: underline;
     -webkit-tap-highlight-color: transparent;
 }
 
 a:hover {
-    color: #ffff99;
+    color: #ffff99;            /* Светло-жёлтый при наведении */
 }
 
 a:focus {
