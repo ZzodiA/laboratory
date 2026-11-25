@@ -12,14 +12,14 @@ body {
     box-sizing: border-box;
 
     font-family: Arial, sans-serif;
-    color: #ffffff;           
+    color: #ffffff;
 }
 
 body::before {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.45);  
+    background: rgba(0, 0, 0, 0.45);
     z-index: -1;
 }
 
@@ -27,12 +27,20 @@ h1, p {
     color: #ffffff;
 }
 
-nav a,
-nav a:visited {
-    color: #ffffff;
+a,
+a:link,
+a:visited,
+a:active {
+    color: #ffd700;            /* жёлтый */
     text-decoration: underline;
+    -webkit-tap-highlight-color: transparent; 
 }
 
-nav a:hover {
-    color: #ffffcc;   
+a:hover {
+    color: #ffff99;            /* светло-жёлтый при наведении */
+}
+
+a:focus {
+    outline: 2px solid #ffd700;
+    outline-offset: 2px;
 }
